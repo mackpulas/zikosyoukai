@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile site</title>
+
+    <!-- CSSファイルの読み込み -->
+    <link rel="stylesheet" href="styles/_reset.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" />
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- JavaScriptファイルの読み込み -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script defer src="scripts/main.js"></script>
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <a class="top-link" href="/"><img src="images/dog-icon.svg" /></a>
+      <!-- ナビゲーションメニュー -->
+      <nav>
+        <a class="nav-link" href="#profile">Profile</a>
+        <a class="nav-link" href="#favorite">Favorite</a>
+        <a class="nav-link" href="#video">Video</a>
+      </nav>
+    </header>
+
+    <!-- Swiper（スライドショー） -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/slide/OIP.jpg" /></div>
+        <div class="swiper-slide"><img src="images/slide/Japan_Tokyo_Rivers_Bridges_Spring_Flowering_trees_551769_1280x852.jpg" /></div>
+        <div class="swiper-slide"><img src="images/slide/shutterstock_1466555822.jpg" /></div>
+        <div class="swiper-slide"><img src="images/slide/wp_19_04_46_pc_02.jpg" /></div>
+      </div>
+      <h1 class="top-title">MAKITO HIRATSUKA OFFICIAL WEBSITE</h1>
+    </div>
+
+    <!-- プロフィールセクション -->
+    <section class="profile" id="profile">
+      <h2 class="section-title">Profile</h2>
+      <div class="container">
+        <img class="profile-image" src="images/OIP (1).jpg" alt="profile-photo" />
+        <div class="profile-text">
+          <p></p>平塚真輝人
+          <p>経営学部 情報マネジメント学科３年               ミリタリーファッションにハマっています。 </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- お気に入りセクション -->
+    <section class="favorite" id="favorite">
+      <h2 class="section-title">Favorite</h2>
+      <div class="container">
+        <div class="item">
+          <h3 class="item-title">Photo montage</h3>
+          <img class="item-cover" src="images/favorite/resize_image.jpg" />
+          <p>好きなアーティストは宇多田ヒカルさんです<br />最近一番聞いているのは「Flaver Of Life」です。3月に５年ぶりに開催されるライブのチケットの抽選があったのですが、とてつもない倍率の中で見事に当選していました。地元宮城での公演ということもあり本当に楽しみです。</p>
+        </div>
+        <div class="item">
+          <h3 class="item-title">Programming</h3>
+          <img class="item-cover" src="images/favorite/50876-JujutsuKaisen-PC-Wallpaper.jpg" />
+          <p>呪術廻戦にはまっています。<br />好きなキャラクターは夏油傑です。物語も佳境に入っており終わりそうな雰囲気がありますが、ハッピーエンドでは終わらなそうなのでどんなエンドを迎えてもいいようにある程度心の準備をしています。</p>
+        </div>
+        <div class="item">
+          <h3 class="item-title">Cuisine</h3>
+          <img class="item-cover" src="images/favorite/OIP.jpg" />
+          <p>最近のマイブームは韓国アイドルグループのIllitです。<br />非常に過酷なオーディションから見事に選ばれた５人組から結成されました。モカちゃんとイロハちゃんという二人の日本人メンバーがいます。デビューしたてでありながら、フレッシュかつスマートなパフォーマンスが魅力でついつい応援したくなるグループです。日本での楽曲披露が明日あるため待ち遠しいです。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 画像セクション -->
+    <section class="section-image">
+      <img src="images/42626.jpg" />
+    </section>
+
+    <!-- ビデオセクション -->
+    <section class="video" id="video">
+      <h2 class="section-title">Video</h2>
+      <div class="container">
+        <div class="about">
+          <p>Illitのデビュー曲である「Magnetic」です。<br />アメリカのビルボードに5週連続でランクインしており、世界的にヒットしています。サビのダンスではついつい踊ってしまいたくなるような振り付けがたくさんあり、「TikTok」でもこの楽曲を使用してダンスをする動画が流行っています。</p>
+        </div>
+        <!-- 動画プレイヤー -->
+        <iframe src="https://www.bing.com/videos/riverview/relatedvideo?&q=magneic+illit+&&mid=927D74877E0ED3312771927D74877E0ED3312771&&FORM=VRDGAR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>&copy; 2024 mackee</footer>
+    <p class="test">テスト</p>
+    <picture>
+        <source media="(max-width: 480px)" srcset="sp.jpg"> 
+        <source media="(max-width: 768px)" srcset="ipad.jpeg">
+        <img src="test.png" alt=""> 
+      </picture>
+  </body>
+</html>
